@@ -35,7 +35,7 @@ export default function RootLayout({
         </main>
         <footer className="border-t border-zinc-800 py-6">
           <p className="text-center font-mono text-xs text-zinc-600">
-            rowconno &mdash; built with Next.js
+            Connor Rowland
           </p>
         </footer>
       </body>
