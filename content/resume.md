@@ -2,29 +2,43 @@
 title: Connor Rowland
 email: connorlewisrowland58@gmail.com
 skills:
-  - category: Penetration Testing
+  - category: Web Application / Web Services
     items:
-      - Web application & API
-      - Internal network & infrastructure
-      - Active Directory & Windows environments
-      - Wireless & physical security
+      - OWASP Top 10 (injection, broken auth, IDOR, security misconfig)
+      - Remote code execution (RCE) and command injection
+      - SQL injection, XSS, SSRF, XXE, SSTI
+      - API security testing (REST, SOAP, GraphQL)
+      - Deserialization and business logic vulnerabilities
   - category: Red Teaming
     items:
       - Adversary simulation
       - C2 infrastructure deployment
       - Phishing & social engineering
       - Lateral movement & persistence
-  - category: Exploitation
+  - category: Build Reviews
     items:
-      - Binary exploitation & ROP chains
-      - Format string & heap exploitation
-      - Web vulnerabilities (SQLi, XSS, SSRF)
-      - Deserialization attacks
-  - category: Tooling
+      - CIS benchmark assessments (Windows, Linux, network devices)
+      - Windows and Linux system hardening
+      - Secure configuration review and gap analysis
+      - General system hardening and baseline compliance
+  - category: Cloud Review
     items:
-      - Burp Suite, Cobalt Strike, Metasploit
-      - BloodHound, Impacket, CrackMapExec
-      - pwntools, Ghidra, Nmap, Wireshark
+      - Configuration reviews across GCP, AWS, and Azure
+      - Scenario-based testing and privilege escalation
+      - IAM policy analysis and least-privilege assessment
+      - Storage, networking, and logging misconfiguration review
+  - category: Mobile Application Testing
+    items:
+      - Android and iOS application assessments
+      - OWASP Mobile Top 10
+      - Dynamic instrumentation with Frida
+      - Traffic interception, reverse engineering, and data storage analysis
+  - category: Code Review
+    items:
+      - Secure code review against industry best practices
+      - Languages — C, C++, Python, Bash, Java
+      - Identifying injection flaws, insecure crypto, and logic errors
+      - SAST tooling and manual review techniques
 ---
 
 ## Experience
