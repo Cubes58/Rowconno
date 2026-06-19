@@ -53,6 +53,9 @@ export default async function WriteupPage({
       </div>
 
       <header className="mb-10 pb-6 border-b border-zinc-800">
+        <p className="font-mono text-green-400 text-sm mb-3">
+          cat ./writeups/{meta.title}
+        </p>
         <div className="flex items-center gap-3 mb-3 flex-wrap">
           <span
             className={`font-mono text-xs border rounded px-2 py-0.5 ${catClass}`}
