@@ -7,7 +7,9 @@ links:
   - label: HackTheBox
     href: https://app.hackthebox.com/profile/rowconno
   - label: TryHackMe
-    href: https://tryhackme.com/p/rowconno
+    href: https://tryhackme.com/p/Rowconno
+  - label: Credly
+    href: https://www.credly.com/users/connor-rowland.21c56e80
   - label: Twitter / X
     href: https://twitter.com/rowconno
   - label: LinkedIn
