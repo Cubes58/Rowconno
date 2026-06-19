@@ -1,5 +1,5 @@
 ---
-bio: "Security consultant with five years of experience delivering penetration tests and red team engagements across a range of industries. I hold a Master's degree in Cyber Security (Distinction) and spend my spare time on HackTheBox and TryHackMe."
+bio: "Security consultant with five years of experience delivering penetration tests and red team engagements across a range of industries. I hold a Master's degree in Cyber Security (Distinction) and spend my spare time on HackTheBox and TryHackMe, where I hold Master rank (top 3%)."
 
 links:
   - label: GitHub
