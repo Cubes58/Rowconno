@@ -16,7 +16,7 @@ interface AboutFrontmatter {
   bio: string;
   links: Link[];
   skills: SkillGroup[];
-  currently: string[];
+  contact: { email: string };
 }
 
 export const metadata = {
@@ -30,7 +30,7 @@ export default function AboutPage() {
     "utf-8"
   );
   const { data } = matter(raw);
-  const { bio, links, skills, currently } = data as AboutFrontmatter;
+  const { bio, links, skills, contact } = data as AboutFrontmatter;
 
   return (
     <div className="space-y-12">
@@ -86,20 +86,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Currently */}
+      {/* Contact */}
       <section>
-        <p className="font-mono text-green-400 text-sm mb-3">currently</p>
-        <ul className="space-y-2">
-          {currently.map((item) => (
-            <li
-              key={item}
-              className="flex items-start gap-2 text-sm text-zinc-400"
-            >
-              <span className="text-green-500 mt-0.5">›</span>
-              {item}
-            </li>
-          ))}
-        </ul>
+        <p className="font-mono text-green-400 text-sm mb-3">contact</p>
+        <a
+          href={`mailto:${contact.email}`}
+          className="inline-flex items-center gap-2 font-mono text-sm text-zinc-400 hover:text-green-400 transition-colors border border-zinc-800 hover:border-green-900 rounded px-3 py-2"
+        >
+          {contact.email}
+        </a>
       </section>
     </div>
   );

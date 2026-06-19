@@ -40,8 +40,6 @@ skills:
       - BloodHound, Impacket, CrackMapExec
       - pwntools, Ghidra, Nmap, Wireshark
 
-currently:
-  - Working through HackTheBox Pro Labs (RastaLabs)
-  - Practising Active Directory attacks — Kerberoasting, DCSync, constrained delegation abuse
-  - Writing up techniques from recent engagements
+contact:
+  email: connorrowland58@hotmail.com
 ---
