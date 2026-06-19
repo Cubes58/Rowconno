@@ -37,11 +37,10 @@ email: connorlewisrowland58@gmail.com
 
 ## Certifications
 
-| Certification | Issuer | Year |
+| Certification | Issuer | Expires |
 |---|---|---|
-| OSCP | Offensive Security | 2022 |
-| CRTO | Zero-Point Security | 2023 |
-| CompTIA Security+ | CompTIA | 2021 |
+| CREST Practitioner Security Analyst (CPSA) | CREST | Jun 2028 |
+| AWS Certified Cloud Practitioner | Amazon Web Services | Oct 2027 |
 
 ## Skills
 
