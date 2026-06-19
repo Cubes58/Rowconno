@@ -7,15 +7,9 @@ interface Link {
   href: string;
 }
 
-interface SkillGroup {
-  category: string;
-  items: string[];
-}
-
 interface AboutFrontmatter {
   bio: string;
   links: Link[];
-  skills: SkillGroup[];
   contact: { email: string };
 }
 
@@ -30,7 +24,7 @@ export default function AboutPage() {
     "utf-8"
   );
   const { data } = matter(raw);
-  const { bio, links, skills, contact } = data as AboutFrontmatter;
+  const { bio, links, contact } = data as AboutFrontmatter;
 
   return (
     <div className="space-y-12">
@@ -59,31 +53,6 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
-      </section>
-
-      {/* Skills */}
-      <section>
-        <p className="font-mono text-green-400 text-sm mb-4">skills</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {skills.map(({ category, items }) => (
-            <div key={category}>
-              <h3 className="font-mono text-zinc-300 text-sm font-semibold mb-2">
-                {category}
-              </h3>
-              <ul className="space-y-1">
-                {items.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2 text-sm text-zinc-400"
-                  >
-                    <span className="text-green-500">›</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* Contact */}

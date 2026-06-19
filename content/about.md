@@ -15,31 +15,6 @@ links:
   - label: LinkedIn
     href: https://linkedin.com/in/connor-rowland-b98397181
 
-skills:
-  - category: Penetration Testing
-    items:
-      - Web application & API
-      - Internal network & infrastructure
-      - Active Directory & Windows environments
-      - Wireless & physical security
-  - category: Red Teaming
-    items:
-      - Adversary simulation
-      - C2 infrastructure deployment
-      - Phishing & social engineering
-      - Lateral movement & persistence
-  - category: Exploitation
-    items:
-      - Binary exploitation & ROP chains
-      - Format string & heap exploitation
-      - Web vulnerabilities (SQLi, XSS, SSRF)
-      - Deserialization attacks
-  - category: Tooling
-    items:
-      - Burp Suite, Cobalt Strike, Metasploit
-      - BloodHound, Impacket, CrackMapExec
-      - pwntools, Ghidra, Nmap, Wireshark
-
 contact:
   email: connorrowland58@hotmail.com
 ---

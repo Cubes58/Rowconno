@@ -1,6 +1,30 @@
 ---
 title: Connor Rowland
 email: connorlewisrowland58@gmail.com
+skills:
+  - category: Penetration Testing
+    items:
+      - Web application & API
+      - Internal network & infrastructure
+      - Active Directory & Windows environments
+      - Wireless & physical security
+  - category: Red Teaming
+    items:
+      - Adversary simulation
+      - C2 infrastructure deployment
+      - Phishing & social engineering
+      - Lateral movement & persistence
+  - category: Exploitation
+    items:
+      - Binary exploitation & ROP chains
+      - Format string & heap exploitation
+      - Web vulnerabilities (SQLi, XSS, SSRF)
+      - Deserialization attacks
+  - category: Tooling
+    items:
+      - Burp Suite, Cobalt Strike, Metasploit
+      - BloodHound, Impacket, CrackMapExec
+      - pwntools, Ghidra, Nmap, Wireshark
 ---
 
 ## Experience
@@ -41,7 +65,3 @@ email: connorlewisrowland58@gmail.com
 |---|---|---|
 | CREST Practitioner Security Analyst (CPSA) | CREST | Jun 2028 |
 | AWS Certified Cloud Practitioner | Amazon Web Services | Oct 2027 |
-
-## Skills
-
-`Python` `C / C++` `x86-64 Assembly` `Bash` `PowerShell` `Burp Suite` `Cobalt Strike` `Metasploit` `BloodHound` `Impacket` `pwntools` `Ghidra` `Nmap` `Linux` `Active Directory` `Docker` `Git`
