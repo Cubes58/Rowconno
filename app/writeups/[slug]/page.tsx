@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { writeups, getWriteup, type WriteupSection } from "@/lib/writeups";
+import { getAllWriteups, getWriteupSlugs } from "@/lib/writeups";
+import { parseMarkdownFile } from "@/lib/markdown";
 
 export function generateStaticParams() {
-  return writeups.map((w) => ({ slug: w.slug }));
+  return getWriteupSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -12,7 +13,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const writeup = getWriteup(slug);
+  const writeup = getAllWriteups().find((w) => w.slug === slug);
   if (!writeup) return {};
   return {
     title: `${writeup.title} — rowconno`,
@@ -20,52 +21,12 @@ export async function generateMetadata({
   };
 }
 
-function Section({ section }: { section: WriteupSection }) {
-  switch (section.type) {
-    case "heading":
-      return (
-        <h2 className="text-xl font-bold text-zinc-100 mt-10 mb-3">
-          {section.content as string}
-        </h2>
-      );
-    case "subheading":
-      return (
-        <h3 className="text-base font-semibold text-zinc-200 mt-6 mb-2">
-          {section.content as string}
-        </h3>
-      );
-    case "paragraph":
-      return (
-        <p className="text-zinc-400 leading-relaxed">{section.content as string}</p>
-      );
-    case "code":
-      return (
-        <div className="my-4">
-          {section.language && (
-            <div className="font-mono text-xs text-zinc-500 bg-zinc-900 border border-zinc-800 border-b-0 rounded-t px-4 py-1.5">
-              {section.language}
-            </div>
-          )}
-          <pre className="bg-zinc-900 border border-zinc-800 rounded-b p-4 text-sm font-mono text-zinc-300 overflow-x-auto">
-            <code>{section.content as string}</code>
-          </pre>
-        </div>
-      );
-    case "list":
-      return (
-        <ul className="space-y-2 my-4">
-          {(section.content as string[]).map((item, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm text-zinc-400">
-              <span className="text-green-500 mt-0.5 shrink-0">›</span>
-              {item}
-            </li>
-          ))}
-        </ul>
-      );
-    default:
-      return null;
-  }
-}
+const categoryColors: Record<string, string> = {
+  "Binary Exploitation": "text-red-400 border-red-900",
+  Web: "text-blue-400 border-blue-900",
+  Crypto: "text-yellow-400 border-yellow-900",
+  Forensics: "text-purple-400 border-purple-900",
+};
 
 export default async function WriteupPage({
   params,
@@ -73,8 +34,12 @@ export default async function WriteupPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const writeup = getWriteup(slug);
-  if (!writeup) notFound();
+  const meta = getAllWriteups().find((w) => w.slug === slug);
+  if (!meta) notFound();
+
+  const { html } = await parseMarkdownFile(`writeups/${slug}.md`);
+  const catClass =
+    categoryColors[meta.category] ?? "text-zinc-400 border-zinc-700";
 
   return (
     <article>
@@ -89,22 +54,23 @@ export default async function WriteupPage({
 
       <header className="mb-10 pb-6 border-b border-zinc-800">
         <div className="flex items-center gap-3 mb-3 flex-wrap">
-          <span className="font-mono text-xs text-green-500 border border-green-900 rounded px-2 py-0.5">
-            {writeup.category}
+          <span
+            className={`font-mono text-xs border rounded px-2 py-0.5 ${catClass}`}
+          >
+            {meta.category}
           </span>
-          <time className="font-mono text-xs text-zinc-500">{writeup.date}</time>
+          <time className="font-mono text-xs text-zinc-500">{meta.date}</time>
         </div>
         <h1 className="text-2xl font-bold text-zinc-100 leading-snug mb-4">
-          {writeup.title}
+          {meta.title}
         </h1>
-        <p className="text-zinc-400 leading-relaxed">{writeup.description}</p>
+        <p className="text-zinc-400 leading-relaxed">{meta.description}</p>
       </header>
 
-      <div className="space-y-4">
-        {writeup.sections.map((section, i) => (
-          <Section key={i} section={section} />
-        ))}
-      </div>
+      <div
+        className="prose prose-invert prose-zinc prose-a:text-green-400 prose-code:text-green-300 prose-headings:text-zinc-100 prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-800 max-w-none"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </article>
   );
 }

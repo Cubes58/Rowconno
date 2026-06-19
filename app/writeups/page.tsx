@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { writeups } from "@/lib/writeups";
+import { getAllWriteups } from "@/lib/writeups";
 
 export const metadata = {
   title: "writeups — rowconno",
@@ -11,7 +11,6 @@ const categoryColors: Record<string, string> = {
   Web: "text-blue-400 border-blue-900",
   Crypto: "text-yellow-400 border-yellow-900",
   Forensics: "text-purple-400 border-purple-900",
-  Misc: "text-zinc-400 border-zinc-700",
 };
 
 function categoryClass(cat: string) {
@@ -19,9 +18,7 @@ function categoryClass(cat: string) {
 }
 
 export default function WriteupListPage() {
-  const sorted = [...writeups].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  const writeups = getAllWriteups();
 
   return (
     <div className="space-y-10">
@@ -34,7 +31,7 @@ export default function WriteupListPage() {
       </section>
 
       <ul className="space-y-4">
-        {sorted.map((w) => (
+        {writeups.map((w) => (
           <li key={w.slug}>
             <Link
               href={`/writeups/${w.slug}/`}
@@ -48,7 +45,7 @@ export default function WriteupListPage() {
                   {w.date}
                 </time>
               </div>
-              <div className="mt-2 flex items-center gap-3">
+              <div className="mt-2">
                 <span
                   className={`font-mono text-xs border rounded px-2 py-0.5 ${categoryClass(w.category)}`}
                 >

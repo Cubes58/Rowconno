@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   --color-background: #09090b;
@@ -12,6 +13,18 @@ body {
   color: var(--color-foreground);
 }
 
-pre {
-  overflow-x: auto;
-}
+/* highlight.js — atom-one-dark theme */
+.hljs { color: #abb2bf; }
+.hljs-comment, .hljs-quote { color: #5c6370; font-style: italic; }
+.hljs-keyword, .hljs-selector-tag { color: #c678dd; }
+.hljs-number, .hljs-string, .hljs-literal,
+.hljs-doctag, .hljs-regexp { color: #98c379; }
+.hljs-title, .hljs-section, .hljs-name,
+.hljs-selector-id, .hljs-selector-class { color: #e06c75; }
+.hljs-attribute, .hljs-attr, .hljs-variable,
+.hljs-template-variable, .hljs-type { color: #e5c07b; }
+.hljs-symbol, .hljs-bullet, .hljs-meta,
+.hljs-meta .hljs-keyword, .hljs-link { color: #61afef; }
+.hljs-built_in, .hljs-deletion { color: #e06c75; }
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: bold; }
