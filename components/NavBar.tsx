@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "about" },
   { href: "/writeups/", label: "writeups" },
-  { href: "/resume/", label: "resume" },
+  { href: "/resume/", label: "resume / curriculum vitae" },
 ];
 
 export default function NavBar() {
