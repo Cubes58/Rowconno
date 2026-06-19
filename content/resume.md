@@ -5,29 +5,35 @@ email: connorlewisrowland58@gmail.com
 
 ## Experience
 
-### Security Consultant — Accenture
-*2022 — Present*
+### Security Delivery Specialist — Accenture UK & Ireland
+*Jun 2025 – Present · London Area, United Kingdom*
 
-- Lead penetration testing engagements across web applications, APIs, internal networks, and Active Directory environments.
-- Plan and execute red team operations simulating advanced threat actors, including phishing campaigns, C2 infrastructure deployment, lateral movement, and persistence.
+- Lead penetration testing and red team engagements across web applications, APIs, internal networks, and Active Directory environments.
+- Plan and execute adversary simulation operations including phishing campaigns, C2 infrastructure deployment, lateral movement, and persistence.
 - Scope, manage, and deliver assessments end-to-end — from kick-off through to remediation workshops with client technical teams.
 - Produce detailed written reports tailored to both technical and executive audiences.
 
-### Junior Security Analyst — Accenture
-*2020 — 2022*
+### Security Delivery Senior Analyst — Accenture UK & Ireland
+*Dec 2022 – Jun 2025 · 2 yrs 7 mos · Greater London, United Kingdom*
 
-- Supported senior consultants on penetration testing engagements covering web applications and internal infrastructure.
-- Performed vulnerability assessments and contributed to red team operations as a supporting operator.
-- Automated reconnaissance and enumeration workflows using Python, reducing manual effort across projects.
-- Completed internal training programme covering OWASP Top 10, network exploitation, and Active Directory attack paths.
+- Delivered penetration testing engagements covering web applications, APIs, internal infrastructure, and Active Directory.
+- Supported red team operations as a key operator, contributing to phishing, initial access, and post-exploitation phases.
+- Mentored junior analysts and conducted internal knowledge-sharing sessions on offensive security techniques.
+
+### Security Delivery Analyst — Accenture UK & Ireland
+*Sep 2021 – Dec 2022 · 1 yr 4 mos · London Area, United Kingdom*
+
+- Performed vulnerability assessments and penetration tests across web application and network targets.
+- Automated reconnaissance and enumeration workflows using Python, reducing manual effort across engagements.
+- Completed internal training covering OWASP Top 10, network exploitation, and Active Directory attack paths.
 
 ## Education
 
 ### MSc Cyber Security — Distinction
-*University of Placeholder · 2019 — 2020*
+*De Montfort University · 2019 – 2020*
 
-### BSc Computer Science — First Class Honours
-*University of Placeholder · 2016 — 2019*
+### BSc Computer Software Engineering — First Class Honours
+*De Montfort University · 2016 – 2019*
 
 ## Certifications
 
