@@ -2,26 +2,28 @@
 title: rowconno
 ---
 
-Security consultant and CTF player focused on binary exploitation and web application security. I work on offensive security assessments and write up interesting techniques I encounter in competitions and research.
+Security consultant with five years of experience delivering penetration tests and red team engagements across a range of industries. I hold a Master's degree in Cyber Security (Distinction) and spend my spare time on HackTheBox and TryHackMe.
 
 ## Links
 
 - [GitHub](https://github.com/Cubes58)
-- [Twitter / X](https://twitter.com/rowconno)
-- [CTFtime](https://ctftime.org)
+- [HackTheBox](https://app.hackthebox.com/profile/rowconno)
+- [TryHackMe](https://tryhackme.com/p/rowconno)
 
 ## Skills
 
-**Exploitation** — Binary exploitation, ROP chains, heap exploitation, format strings
+**Penetration Testing** — Web application, API, internal network, Active Directory, wireless
 
-**Web** — SQL injection, XSS, SSRF, deserialization
+**Red Teaming** — Adversary simulation, C2 infrastructure, phishing, lateral movement, persistence
 
-**Reverse Engineering** — Ghidra, IDA Pro, GDB / pwndbg, angr
+**Exploitation** — Binary exploitation, ROP chains, format strings, heap exploitation
 
-**Tools** — pwntools, Burp Suite, Wireshark, Metasploit
+**Web** — SQL injection, XSS, SSRF, XXE, deserialization, OAuth abuse
+
+**Tooling** — Burp Suite, Cobalt Strike, Metasploit, BloodHound, Impacket, pwntools, Ghidra
 
 ## Currently
 
-- Practicing heap exploitation (tcache poisoning, house of force)
-- Playing CTFs with my team on weekends
-- Reading: *The Art of Exploitation* — Jon Erickson
+- Working through HackTheBox Pro Labs (RastaLabs)
+- Practising Active Directory attacks — Kerberoasting, DCSync, constrained delegation abuse
+- Writing up techniques from recent engagements
