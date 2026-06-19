@@ -11,7 +11,7 @@ links:
   - label: Twitter / X
     href: https://twitter.com/rowconno
   - label: LinkedIn
-    href: https://linkedin.com/in/rowconno
+    href: https://linkedin.com/in/connor-rowland-b98397181
 
 skills:
   - category: Penetration Testing
