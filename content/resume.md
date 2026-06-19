@@ -41,6 +41,13 @@ skills:
       - SAST tooling and manual review techniques
 ---
 
+## Certifications
+
+| Certification | Issuer | Expires |
+|---|---|---|
+| CREST Practitioner Security Analyst (CPSA) | CREST | Jun 2028 |
+| AWS Certified Cloud Practitioner | Amazon Web Services | Oct 2027 |
+
 ## Experience
 
 ### Security Delivery Specialist — Accenture UK & Ireland
@@ -72,10 +79,3 @@ skills:
 
 ### BSc Computer Software Engineering — First Class Honours
 *De Montfort University · 2016 – 2019*
-
-## Certifications
-
-| Certification | Issuer | Expires |
-|---|---|---|
-| CREST Practitioner Security Analyst (CPSA) | CREST | Jun 2028 |
-| AWS Certified Cloud Practitioner | Amazon Web Services | Oct 2027 |
