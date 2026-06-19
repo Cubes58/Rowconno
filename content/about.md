@@ -5,7 +5,7 @@ links:
   - label: GitHub
     href: https://github.com/Cubes58
   - label: HackTheBox
-    href: https://app.hackthebox.com/profile/rowconno
+    href: https://app.hackthebox.com/profile/Rowconno
   - label: TryHackMe
     href: https://tryhackme.com/p/Rowconno
   - label: Credly
