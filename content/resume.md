@@ -50,7 +50,7 @@ skills:
 
 ## Experience
 
-### Security Delivery Specialist — Accenture UK & Ireland
+### Security Delivery Specialist - Accenture UK & Ireland
 *Jun 2025 – Present · London Area, United Kingdom*
 
 - Team lead for numerous security assessments focusing on Android and iOS application reviews, using tools such as Frida (JavaScript) to hook into API calls and overwrite behaviour without breaking application logic.
@@ -60,14 +60,14 @@ skills:
 - Practical experience reviewing cloud configurations across AWS, Microsoft Azure, and Google Cloud Platform (GCP), with a strong understanding of core cloud services, architectures, security controls, and configuration risks.
 - Practical experience reviewing cloud configurations across AWS, Microsoft Azure, and Google Cloud Platform (GCP), with a strong understanding of core cloud services, architectures, security controls, and configuration risks.
 
-### Security Delivery Senior Analyst — Accenture UK & Ireland
+### Security Delivery Senior Analyst - Accenture UK & Ireland
 *Dec 2022 – Jun 2025 · 2 yrs 7 mos · Greater London, United Kingdom*
 
 - Adapted and extended existing internal tools, such as our report generating tool, implementing multi-threading capabilities, to drastically improve performance when generating large project reports.
 - Worked closely with clients to provide solutions to mitigate insecure implementations that lead to vulnerabilities within their codebase.
 - Built proficiency in Windows and Linux environments through independent build review and analysis. Maintaining Python scripts used to pull and assess system information.
 
-### Security Delivery Analyst — Accenture UK & Ireland
+### Security Delivery Analyst - Accenture UK & Ireland
 *Sep 2021 – Dec 2022 · 1 yr 4 mos · London Area, United Kingdom*
 
 - Shadowed senior security consultants across a range of activities, including secure code reviews and security assessments of applications built using multiple languages and frameworks, improving my understanding on various different technology stacks.
