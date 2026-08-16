@@ -58,7 +58,6 @@ skills:
 - Managed clients, being the contact who ensures their security needs are met. This included discussing requirements, monitoring on-going security assessments and being the point-of-contact for both internal team members and client members.
 - Contributed to an LLM-driven penetration-testing framework by developing automated pytest test suites to evaluate model behaviour, performance, and reliability. The framework enables interchangeable LLMs to automate selected pentesting tasks, reducing manual effort and allowing pentesters to focus on areas requiring human judgement.
 - Practical experience reviewing cloud configurations across AWS, Microsoft Azure, and Google Cloud Platform (GCP), with a strong understanding of core cloud services, architectures, security controls, and configuration risks.
-- Practical experience reviewing cloud configurations across AWS, Microsoft Azure, and Google Cloud Platform (GCP), with a strong understanding of core cloud services, architectures, security controls, and configuration risks.
 
 ### Security Delivery Senior Analyst - Accenture UK & Ireland
 *Dec 2022 – Jun 2025 · 2 yrs 7 mos · Greater London, United Kingdom*
