@@ -75,10 +75,15 @@ skills:
 ## Education
 
 ### MSc Cyber Security
+
 *De Montfort University · 2019 – 2020*
+
 *Result Obtained: Distinction*
 
 ### BSc Computer Games Programming
+
 *De Montfort University · 2016 – 2019*
+
 *Result Obtained: First Class with Honours*
+
 *Certificate Obtained: Best Final Year Project*
