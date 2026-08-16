@@ -1,5 +1,5 @@
 ---
-bio: "Security consultant with five years of experience delivering penetration tests and red team engagements across a range of industries. I hold a Master's degree in Cyber Security (Distinction) and spend my spare time on HackTheBox and TryHackMe, where I hold Master rank (top 3%)."
+bio: "Security consultant with over five years of experience delivering penetration tests and red team engagements across a range of industries and services. Experienced in developing Python tooling to automate and support penetration testing activities, from extracting, transforming, and analysing network device data to developing low-level extensions for packet decoding and source geolocation in Kismet. Driven by understanding how things work and building solutions that have a meaningful impact."
 
 links:
   - label: GitHub
